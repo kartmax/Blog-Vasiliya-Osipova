@@ -7,7 +7,7 @@
   background: url("../img/bg-widget-area.png") no-repeat;
   background-size: 100% 100%;
   margin-top: 0;
-  padding: 50px 10px 25px;
+  padding: 40px 10px 25px;
   line-height: 1.2;
 
   @media only screen and (min-width : 860px){
@@ -115,7 +115,6 @@
     }
 
     .menu-item-has-children {
-      background: url("../img/bg-widg-menu-item-children.png") no-repeat;
       background-size: 100% 52px;
       
       &:before {        
@@ -128,6 +127,11 @@
       &:after {
         top: 15px;
         transform: translateY(0);
+        transition: 0.25s;
+      }
+
+      .sub-menu {
+        display: none;
       }
 
       li {
@@ -161,13 +165,13 @@
 
     a {
       display: block;
-      padding: 14px 9px 14px 43px;
+      padding: 10px 9px 10px 43px;
       line-height: 1.5;
     }
 
     .menu-item-1 {
       &:after {
-        background: #76aa5d url("../img/icon-widg-menu-item-1.png") center center no-repeat;
+        background: #96b1d0 url("../img/icon-widg-menu-item-1.png") center center no-repeat;
       }
     }
 
@@ -180,6 +184,15 @@
     .menu-item-3 {
       &:after {
         background: #96b1d0 url("../img/icon-widg-menu-item-3.png") center center no-repeat;
+      }
+    }
+
+    .js-item-has-children-active {
+      background: url("../img/bg-widg-menu-item-children.png") no-repeat;
+      background-size: 100% 52px;
+
+      &:after {
+        background-color: #76aa5d;
       }
     }
   }
@@ -231,7 +244,7 @@
 .widget-subscribe {
   background: url("../img/bg-widget-subscribe.png") center top no-repeat;
   margin-top: 0;
-  padding: 80px 52px 40px;
+  padding: 70px 52px 40px;
 
   &:before, &:after {
     display: none;
@@ -266,7 +279,7 @@
 /*******************widget-top-commentators*************************/
 
 .widget-top-commentators {
-  padding: 25px 30px 20px;
+  padding: 25px 30px 7px;
 
   .commentator-box {
     display: inline-block;
@@ -342,10 +355,10 @@
 /****************widget-articles*********************/
 
 .widget-articles {
+  padding-bottom: 10px;
 
   .article-box {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 20px;
 
     &:before {
       content: '';
@@ -355,7 +368,7 @@
   }
 
   .article-box:first-child {
-    padding-top: 30px;
+    padding-top: 16px;
   }
 
   .article-box:nth-child(n + 2) {
@@ -377,6 +390,7 @@
 
   .wrap-btn {
     margin-top: 8px;
+    margin-bottom: 5px;
     width: 140px;
     min-height: 38px;
   }

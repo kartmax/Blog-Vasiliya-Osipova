@@ -9,6 +9,13 @@ jQuery(document).ready(function ($) {
         $('.mobile-menu').slideToggle(250);
     });
 
+    //menu widget catecory
+    $('.menu-item-has-children').click(function () {
+       $(this).toggleClass('js-item-has-children-active');
+       $(this).children('.sub-menu').slideToggle(200);
+    });
+
+
     //checkbox
     var $checkbox = $('input[type=checkbox]');
     $checkbox.css("opacity", "0");

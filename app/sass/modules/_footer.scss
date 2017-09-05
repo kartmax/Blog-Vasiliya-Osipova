@@ -31,7 +31,7 @@
     margin-right: 10px;
 
     @media only screen and (min-width : 768px) {
-      padding-left: 100px;
+      padding-left: 83px;
     }
 
     &:before {
@@ -41,9 +41,10 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-      width: 90px;
-      height: 90px;
+      width: 77px;
+      height: 77px;
       background: url("../img/logotip.png") -10px no-repeat;
+      background-size: cover;
 
       @media only screen and (min-width : 768px) {
         display: block;

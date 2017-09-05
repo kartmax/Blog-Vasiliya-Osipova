@@ -1,3 +1,12 @@
+.feedback-page,
+.internail-page {
+  .content-area {
+    @media only screen and (min-width : 768px) {
+      padding-top: 25px;
+    }
+  }
+}
+
 .content-area {
   position: relative;
   float: right;
@@ -7,12 +16,12 @@
   background-size: 100% 100%;
   margin-top: 0;
   margin-left: -15px;
-  padding: 20px 15px 30px;
+  padding: 20px 15px 20px;
 
   @media only screen and (min-width : 768px){
     background: url("../img/bg-content.png") no-repeat;
     background-size: 100% 100%;
-    padding: 45px 35px 30px;
+    padding: 45px 35px 20px;
 
   }
 
@@ -123,19 +132,26 @@
 
   .entry-author {
     margin-top: 10px;
-    background: url("../img/icon-meta-author.png") 0 0 no-repeat;
     color: #000;
     @include fontSize(14px);
     margin-right: 15px;
-    padding-left: 30px;
+
+    @media only screen and (min-width : 768px){
+      background: url("../img/icon-meta-author.png") 0 0 no-repeat;
+      padding-left: 30px;
+    }
   }
 
   .entry-category {
     margin-top: 10px;
     @include fontSize(14px);
     color: #000;
-    background: url("../img/icon-entry-catecory.png") 0 0 no-repeat;
-    padding-left: 30px;
+
+    @media only screen and (min-width : 768px){
+      background: url("../img/icon-entry-catecory.png") 0 0 no-repeat;
+      background-size: contain;
+      padding-left: 30px;
+    }
 
     a {
       color: #608a4d;
@@ -180,8 +196,8 @@
       color: #000;
       @include fontSize(16px);
       line-height: 1.4;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      margin-top: 10px;
+      margin-bottom: 5px;
     }
 
     .title {
@@ -193,7 +209,7 @@
       border-radius: 3px;
       border: 1px solid #fff;
       background-color: #d6dee8;
-      padding: 18px 20px 16px;
+      padding: 12px 20px 12px;
     }
     
     .list-style-ol {
@@ -243,7 +259,7 @@
       justify-content: flex-start;
 
       .title {
-        margin-bottom: 5px;
+        margin-bottom: 0;
       }
 
       a {
@@ -276,7 +292,7 @@
     white-space: nowrap;
 
     span {
-      margin-right: 25px;
+      margin-right: 15px;
     }
   }
 

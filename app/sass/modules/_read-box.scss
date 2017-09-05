@@ -80,7 +80,7 @@
   background: url("../img/bg-count-read.png") center no-repeat;
   background-size: 101% 100%;
   margin-bottom: 0;
-  padding: 62px 63px 40px;
+  padding: 56px 63px 56px;
 
   @media only screen and (min-width : 768px) {
     display: block;
@@ -120,5 +120,6 @@
     width: 221px;
     min-height: 38px;
     box-shadow: 0 8px 14px -3px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(166, 246, 126, 0.63), inset 0 0 8px rgba(184, 238, 157, 0.46);
+    margin-top: 10px;
   }
 }

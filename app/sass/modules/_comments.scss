@@ -12,7 +12,7 @@
     box-shadow: inset 0 0 21px 1px rgba(146, 157, 171, 0.34);
     border-radius: 3px;
     background-color: #fff;
-    padding: 16px;
+    padding: 10px 16px;
     color: #000;
     @include fontSize(16px);
   }
@@ -119,6 +119,16 @@
       p {
         margin-top: 10px;
         margin-bottom: 10px;
+      }
+
+      .comment-form-comment {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        textarea  {
+          max-height: 90px;
+          padding-top: 7px;
+        }
       }
 
       p:nth-child(4) {
